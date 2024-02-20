@@ -35,7 +35,7 @@
         </div>
 
         <div class="seguros container">
-            <div class="seguros-item">
+            <div class="seguros-item fadeInLeft" data-anime="200">
                 <h3 class="font-1-xl cor-6">PRATA</h3>
                 <span class="font-1-xl cor-0">R$ 199<span class="font-1-xs cor-6">mensal</span></span>
                 <ul class="font-2-m cor-0">
@@ -44,9 +44,9 @@
                     <li>Suporte 08h às 18h</li>
                     <li>Cobertura estadual</li>
                 </ul>
-                <a class="botao secundario" href="./orcamento.html">Inscreva-se</a>
+                <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">Inscreva-se</a>
             </div>
-            <div class="seguros-item">
+            <div class="seguros-item fadeInRight" data-anime="400">
                 <h3 class="font-1-xl cor-p1">OURO</h3>
                 <span class="font-1-xl cor-0">R$ 299<span class="font-1-xs cor-6">mensal</span></span>
                 <ul class="font-2-m cor-0">
@@ -57,7 +57,7 @@
                     <li>Desconto em parceiros</li>
                     <li>Acesso ao Clube Bikcraft</li>
                 </ul>
-                <a class="botao" href="./orcamento.html">Inscreva-se</a>
+                <a class="botao" href="./orcamento.html?tipo=seguro&produto=ouro">Inscreva-se</a>
             </div>
         </div>
     </main>
@@ -104,28 +104,29 @@
         <h2 class="font-1-xxl"> perguntas frequentes<span class="cor-p1">.</span></h2>
         <dl>
             <div>
-                <dt class="font-1-m-b">Qual forma de pagamento vocês aceitam?</dt>
-                <dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
+                <dt><button class="font-1-m-b" aria-controls="pergunta1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></dt>
+                <dd id="pergunta1" class="font-2-s cor-9 ativa">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitamos PIX e Boleto através do PagSeguro.</dd>
             </div>
             <div>
-                <dt class="font-1-m-b">Como posso entrar em contato?</dt>
-                <dd class="font-2-s cor-9">O contato é feito através do email: luckstradiottoplay@outloook.com ou no What's app (14) 997011-4296.</dd>
+                <dt><button class="font-1-m-b" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+                <dd id="pergunta2" class="font-2-s cor-9">O contato é feito através do email: luckstradiottoplay@outloook.com ou no What's app (14) 997011-4296.</dd>
             </div>
             <div>
-                <dt class="font-1-m-b">Vocês possuem algum desconto?</dt>
-                <dd class="font-2-s cor-9">Sim! De tempos em tempos iniciamos campanhas de descontos e promoções de verão para a incentivação de clientes a adquirir um meio de transporte ecológicamente limpo.</dd>
+                <dt><button class="font-1-m-b" aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+                <dd id="pergunta3" class="font-2-s cor-9">Sim! De tempos em tempos iniciamos campanhas de descontos e promoções de verão para a incentivação de clientes a adquirir um meio de transporte ecológicamente limpo.</dd>
             </div>
             <div>
-                <dt class="font-1-m-b">Qual a Garantia que possuo?</dt>
-                <dd class="font-2-s cor-9">Todos os nossos produtos tem 1 anoo de garantia podendo ser extendido para mais tempo de acordo com os planos de seguro contra quebras e defeitos na entrega ou uso.</dd>
+                <dt><button class="font-1-m-b" aria-controls="pergunta4" aria-expanded="false">Qual a Garantia que possuo?</button>
+                </dt>
+                <dd id="pergunta4" class="font-2-s cor-9">Todos os nossos produtos tem 1 anoo de garantia podendo ser extendido para mais tempo de acordo com os planos de seguro contra quebras e defeitos na entrega ou uso.</dd>
             </div>
             <div>
-                <dt class="font-1-m-b">Posso parcelar no boleto?</dt>
-                <dd class="font-2-s cor-9">Pagamentos parcelados são apenas aceitos através de cartão de crédito.</dd>
+                <dt><button class="font-1-m-b" aria-controls="pergunta5" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+                <dd id="pergunta5" class="font-2-s cor-9">Pagamentos parcelados são apenas aceitos através de cartão de crédito.</dd>
             </div>
             <div>
-                <dt class="font-1-m-b">Quantas trocas posso fazer ao ano?</dt>
-                <dd class="font-2-s cor-9">É possível fazer 1 troca caso o produto foi entregue como avarias ou algum defeito. Após o envio o produto tem garantia de 1 ano para qualquer tipo de problema que apresentar, após o prazo será feita uma avaliação do produto e caso o cliente estiver inscrito em um programa de seguro será avaliado o defeito e perante a necessidade poderá haver mais trocas de produtos para o cliente. não sendo feito um programa de seguro o cliente poderá optar pela avaliação de custo que o produto terá ao ser enviado para reparo.</dd>
+                <dt><button class="font-1-m-b" aria-controls="pergunta6" aria-expanded="false">Quantas trocas posso fazer ao ano?</button></dt>
+                <dd id="pergunta6" class="font-2-s cor-9">É possível fazer 1 troca caso o produto foi entregue como avarias ou algum defeito. Após o envio o produto tem garantia de 1 ano para qualquer tipo de problema que apresentar, após o prazo será feita uma avaliação do produto e caso o cliente estiver inscrito em um programa de seguro será avaliado o defeito e perante a necessidade poderá haver mais trocas de produtos para o cliente. não sendo feito um programa de seguro o cliente poderá optar pela avaliação de custo que o produto terá ao ser enviado para reparo.</dd>
             </div>
         </dl>
     </article>
@@ -169,5 +170,7 @@
             </p>
         </div>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
